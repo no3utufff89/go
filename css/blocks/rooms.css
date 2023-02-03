@@ -14,7 +14,6 @@
     line-height: 80px;
     text-transform: uppercase;
     text-align: center;
-    
 }
 
 .rooms-list__item {
@@ -28,7 +27,12 @@
     justify-content: center;
     background-size: contain;
 }
-.section_zali{
+
+.rooms-list__item:hover>.rooms-list__link {
+    color: #a387aa;
+}
+
+.section_zali {
     padding-bottom: 100px;
 }
 

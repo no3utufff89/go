@@ -3,6 +3,7 @@
 @import './normalize.css';
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
     --main-color: #fff;
     --main-dark: #1b1a1b;
     --main-purple: #440F51;
