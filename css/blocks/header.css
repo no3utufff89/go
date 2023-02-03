@@ -1,0 +1,51 @@
+.header {
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+.header__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo__img {
+    display: block;
+}
+.callback-btn {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    border: 3px solid #CD06FF;
+    border-radius: 10px;
+    color: var(--main-color);
+    width: 280px;
+    height: 55px;
+
+}
+.callback-btn:hover{
+    background-color: #6C0287;
+    color: var(--main-color);
+}
+.callback-btn:focus{
+    outline-style:none;
+   
+    background-color: #6C0287;
+    border: none;
+}
+/*====================================Навигация======================*/
+.nav__list {
+    display: flex;
+    column-gap: 40px;
+}
+.nav__item {
+
+}
+
+.nav__link {
+    font-size: 22px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+/*====================================/////////////===================*/

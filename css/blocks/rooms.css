@@ -1,0 +1,49 @@
+.rooms-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section__title_zali {
+    margin-bottom: 40px;
+}
+
+.rooms-list__link {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.rooms-list__item {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    height: 349px;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+}
+.section_zali{
+    padding-bottom: 100px;
+}
+
+.rooms-list__item_vibes {
+    background-image: url(../../assets/img/80_vibes-zal.jpg);
+}
+
+.rooms-list__item_star-wars {
+    background-image: url(../../assets/img/star_wars-zal.jpg);
+}
+
+.rooms-list__item_wild-west {
+    background-image: url(../../assets/img/wild_west-zal.jpg);
+}
+
+.rooms-list__item_neon {
+    background-image: url(../../assets/img/neon_style-zal.jpg);
+}

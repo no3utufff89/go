@@ -1,0 +1,10 @@
+@import './css/default.css';
+@import './css/blocks/header.css';
+@import './css/blocks/banner.css';
+@import './css/blocks/features.css';
+@import './css/blocks/rooms.css';
+@import './css/blocks/reserve.css';
+@import './css/blocks/about.css';
+@import './css/blocks/reviews.css';
+@import './css/blocks/faq.css';
+@import './css/blocks/footer.css';
