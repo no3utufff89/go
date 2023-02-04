@@ -23,6 +23,7 @@
     color: var(--main-color);
     width: 280px;
     height: 55px;
+    transition: background-color 0.25s;
 }
 
 .callback-btn:hover {
@@ -44,14 +45,27 @@
     column-gap: 40px;
 }
 
+.nav__item {
+    position: relative;
+}
+
 .nav__item:hover>.nav__link {
-    color: #CD06FF;
+    /* color: #CD06FF; */
 }
 
 .nav__link {
+    color: var(--main-color);
     font-size: 22px;
     line-height: 50px;
     text-transform: uppercase;
+    transition: color 0.25s;
+}
+
+
+/*Анимация*/
+
+.nav__link:hover {
+    color: #CD06FF;
 }
 
 

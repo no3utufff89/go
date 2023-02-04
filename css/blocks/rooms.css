@@ -14,6 +14,7 @@
     line-height: 80px;
     text-transform: uppercase;
     text-align: center;
+    transition: all 0.5s;
 }
 
 .rooms-list__item {
@@ -26,6 +27,12 @@
     align-items: center;
     justify-content: center;
     background-size: contain;
+    perspective: 250px;
+    transition: 0.5s ease;
+}
+
+.rooms-list__item:hover .rooms-list__link {
+    transform: translateZ(30px);
 }
 
 .rooms-list__item:hover>.rooms-list__link {

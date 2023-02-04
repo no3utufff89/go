@@ -30,84 +30,100 @@
     margin-left: 100px;
     margin-bottom: 30px;
 }
+
 .banner-info {
     display: flex;
     flex-direction: column;
     position: relative;
 }
+
 .banner-info__list {
     margin-bottom: 150px;
     display: flex;
     column-gap: 40px;
     max-width: min-content;
 }
-.banner-info__item:last-child{
+
+.banner-info__item:last-child {
     align-self: flex-end;
 }
 
 .banner-info__text {
     font-size: 30px;
-line-height: 34px;
-text-align: center;
-
+    line-height: 34px;
+    text-align: center;
 }
+
 .banner-info__text_number {
     font-weight: 900;
-font-size: 100px;
-line-height: 141px;
-color: var(--main-purple-light);
+    font-size: 100px;
+    line-height: 141px;
+    color: var(--main-purple-light);
 }
+
 .banner-info__text_styled {
     font-weight: 900;
     font-size: 75px;
     line-height: 106px;
     text-transform: uppercase;
-color: var(--main-purple-light);
-
+    color: var(--main-purple-light);
 }
+
 .banner-link {
     font-weight: 700;
-font-size: 26px;
-line-height: 30px;
-text-transform: uppercase;
-padding: 25px 69px;
-background-color: #6C0287;
-border-radius: 10px;
-display: block;
-max-width: 374px;
-display: inline-block;
-box-shadow: 0 0 10px #6C0287;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 25px 69px;
+    background-color: #6C0287;
+    border-radius: 10px;
+    display: block;
+    max-width: 374px;
+    display: inline-block;
+    box-shadow: 0 0 10px #6C0287;
+    transition: background-color 0.2s;
 }
-.banner-link:hover{
+
+.banner-link:hover {
     background-color: #840AA3;
 }
-.banner-link:active{
+
+.banner-link:active {
     background-color: #640AA3;
 }
-.banner-link:focus{
+
+.banner-link:focus {
     background-color: #840AA3;
-    outline-style:none;
+    outline-style: none;
 }
-.banner__down-link{
+
+.banner__down-link {
     display: block;
     position: absolute;
     left: 539px;
     z-index: 2;
     fill: transparent;
 }
-.arrow:hover{
+
+.arrow {
+    transition: fill 0.5s, color 0.5s;
+}
+
+.arrow:hover {
     fill: var(--main-color);
     color: #640AA3;
 }
-.arrow:active{
+
+.arrow:active {
     fill: #CD06FF;
     color: var(--main-color);
 }
-.banner__down-link:focus{
-    outline-offset: 0;
-outline: 2px solid #CD06FF;
 
+.banner__down-link:focus {
+    outline-offset: 0;
+    outline: 2px solid #CD06FF;
 }
-.arrow{
+
+.arrow {
     color: white;
 }

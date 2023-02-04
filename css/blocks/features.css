@@ -2,48 +2,61 @@
     gap: 40px 20px;
     display: flex;
     flex-wrap: wrap;
+    perspective: 380px;
+    perspective-origin: 50% 0;
 }
-.features__item{
+
+.features__item {
     width: 380px;
     height: 228px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-   display: flex;
+    display: flex;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 34px;
+    transition: 0.3s;
 }
-.features__text{
+
+.features__item:hover {
+    transform: translate3d(0, 10px, 20px)
+}
+
+.features__text {
     display: flex;
     align-self: flex-end;
     font-weight: 700;
-font-size: 20px;
-line-height: 28px;
-    
-    
+    font-size: 20px;
+    line-height: 28px;
 }
-.features_title{
+
+.features_title {
     white-space: pre-line;
     text-align: center;
     margin-bottom: 41px;
-   
 }
-.features__item_vr{
+
+.features__item_vr {
     background-image: url(../../assets/img/vr.jpg);
 }
-.features__item_audio{
+
+.features__item_audio {
     background-image: url(../../assets/img/audio.jpg);
 }
-.features__item_songs{
+
+.features__item_songs {
     background-image: url(../../assets/img/audio.jpg);
 }
-.features__item_tablegames{
+
+.features__item_tablegames {
     background-image: url(../../assets/img/game.jpg);
 }
-.features__item_cinema{
+
+.features__item_cinema {
     background-image: url(../../assets/img/netflix.jpg);
 }
-.features__item_ps{
+
+.features__item_ps {
     background-image: url(../../assets/img/sony.jpg);
 }

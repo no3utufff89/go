@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .questions__item::after {
@@ -19,10 +20,12 @@
     display: block;
     width: 46px;
     height: 46px;
+    transition: 0.3s;
 }
 
 .questions__item::after:active {
     background-image: url(../../assets/img/close-colored.svg);
+    transition: 0.3s;
 }
 
 .questions__item:hover::after {

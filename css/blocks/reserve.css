@@ -11,6 +11,12 @@
     margin-bottom: 40px;
 }
 
+label,
+input {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 .reserve__btn {
     color: #6C0287;
     text-transform: uppercase;
@@ -27,6 +33,7 @@
     outline-offset: 1px;
     outline-width: 1px;
     outline-color: #CD06FF;
+    transition: 0.3s;
 }
 
 .reserve__btn:hover {

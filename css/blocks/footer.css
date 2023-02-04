@@ -37,6 +37,7 @@
 .mail__link {
     display: flex;
     align-items: center;
+    transition: 0.3s;
 }
 
 .phone__link:hover,
@@ -49,14 +50,21 @@
     margin-right: 30px;
 }
 
-.social_icon:hover {}
+.social_icon:hover {
+    color: #CD06FF;
+}
+
+.social__link svg {
+    transition: 0.3s;
+}
 
 .social__link {
     display: block;
+    transition: 0.3s;
 }
 
 .social__link:hover>svg {
-    color: #EADEED;
+    color: #CD06FF;
 }
 
 .social__link:active {
