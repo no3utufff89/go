@@ -1,6 +1,4 @@
-.reviews {
-
-}
+.reviews {}
 
 .reviews__list {
     display: flex;
@@ -11,7 +9,6 @@
 .reviews__item {
     display: flex;
     column-gap: 20px;
-
 }
 
 .reviews__text {
@@ -32,7 +29,25 @@
     height: 280px;
     display: block;
     border-radius: 50%;
+}
+
+.avatar__gradient {
+    width: 280px;
+    height: 280px;
+    position: relative;
     margin-bottom: 11px;
+}
+
+.avatar__gradient::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%);
 }
 
 .avatar__description {

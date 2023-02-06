@@ -1,9 +1,11 @@
+.features {
+    height: 808px;
+}
+
 .features__list {
     gap: 40px 20px;
     display: flex;
     flex-wrap: wrap;
-    perspective: 380px;
-    perspective-origin: 50% 0;
 }
 
 .features__item {
@@ -19,8 +21,12 @@
     transition: 0.3s;
 }
 
+.features__item:nth-child(3n+2) {
+    transform: translateY(50px);
+}
+
 .features__item:hover {
-    transform: translate3d(0, 10px, 20px)
+    transform: scale(1.1)
 }
 
 .features__text {

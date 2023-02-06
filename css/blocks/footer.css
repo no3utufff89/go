@@ -106,4 +106,15 @@
 
 .copyright__text_name {
     margin-bottom: 6px;
+    transition: 0.3s ease;
+}
+
+.copyright__text_mail {
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.copyright__text_name:hover,
+.copyright__text_mail:hover {
+    color: var(--main-purple-light);
 }
