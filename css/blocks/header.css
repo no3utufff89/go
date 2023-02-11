@@ -1,12 +1,15 @@
 .header {
     padding-top: 30px;
-    padding-bottom: 0;
 }
 
 .header__row {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.logo {
+    display: flex;
 }
 
 .logo__img {
@@ -42,6 +45,7 @@
 
 .nav__list {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 40px;
 }
 
@@ -61,6 +65,50 @@
     transition: color 0.25s;
 }
 
+.menu-btn {
+    font-size: 0;
+    position: relative;
+    width: 54px;
+    height: 29px;
+    display: none;
+    align-items: center;
+    gap: 7px;
+}
+
+.menu-btn::before,
+.menu-btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 5px;
+    background-color: var(--main-menu-bg);
+    transition: transform .24s ease-in-out, top .24s ease-in-out;
+    border-radius: 2px;
+}
+
+.menu-btn::before {
+    width: 100%;
+    top: 0;
+}
+
+.menu-btn::after {
+    width: 50%;
+    top: calc(100% - 5px);
+}
+
+.menu-btn__line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--main-menu-bg);
+    opacity: 1;
+    transition: transform .24s ease-in-out;
+    border-radius: 2px;
+}
+
 
 /*Анимация*/
 
@@ -70,3 +118,56 @@
 
 
 /*====================================/////////////===================*/
+
+@media (max-width:1200px) {
+    .logo {
+        width: 87px;
+        height: 55px;
+    }
+    .nav__list {
+        column-gap: 20px;
+    }
+    .nav__link {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .callback-btn {
+        font-size: 18px;
+        line-height: 24px;
+        width: 229px;
+        height: 45px;
+    }
+}
+
+@media (max-width:1000px) {
+    .header {
+        padding-top: 32px;
+    }
+    .nav {
+        display: none;
+    }
+    .logo {
+        width: 87px;
+        height: 55px;
+    }
+    .menu-btn {
+        display: flex;
+    }
+}
+
+@media (max-width:680px) {
+    .header {
+        padding-top: 20px;
+    }
+    .logo {
+        width: 66px;
+        height: 42px;
+    }
+    .menu-btn {
+        width: 39px;
+        height: 20px;
+    }
+    .callback-btn {
+        display: none;
+    }
+}

@@ -1,0 +1,8 @@
+.section_west {
+    padding-top: 5px;
+}
+
+.wildwest_banner {
+    background-image: url(../../assets/img/banners/wild-west-banner.jpg);
+    background-position: top;
+}

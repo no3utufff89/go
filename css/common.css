@@ -1,0 +1,246 @@
+.hidden {
+    display: none;
+}
+
+.page__banner {
+    height: 750px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.quote {
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+}
+
+.breadcrumbs {
+    padding-top: 60px;
+    padding-bottom: 5px;
+}
+
+.breadcrumbs__link {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.breadcrumbs__link:hover {
+    color: var(--main-purple-light);
+}
+
+.breadcrumbs__link:hover>svg {
+    color: rgb(89, 197, 27);
+}
+
+.breadcrumbs__icon {
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.page__title {
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+
+.page__description {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.room__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.room__description {
+    font-size: 20px;
+    line-height: 28px;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.room__description:last-child {
+    margin-bottom: 0;
+}
+
+.room {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 15px;
+    column-gap: 80px;
+}
+
+.room__img {
+    width: 600px;
+    height: 424px;
+}
+
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.other-rooms {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 5px;
+}
+
+.other-rooms__link {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 229px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    word-break: break-all;
+}
+
+.other-rooms__link_wildwest {
+    background-image: url(../assets/img/wild_west-zal.jpg);
+}
+
+.other-rooms__link_starwars {
+    background-image: url(../assets/img/star_wars-zal.jpg);
+}
+
+.other-rooms__link_neonstyle {
+    background-image: url(../assets/img/neon_style-zal.jpg);
+}
+
+.other-rooms__link_vibes {
+    background-image: url(../assets/img/80_vibes-zal.jpg);
+}
+
+@media (max-width:1200px) {
+    .other-rooms__link {
+        width: 288px;
+        height: 172px;
+    }
+    .room {
+        column-gap: 30px;
+    }
+    .room__img {
+        width: 461px;
+        height: 326px;
+    }
+    .breadcrumbs {
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    .page__description {
+        font-size: 20px;
+        line-height: 150%;
+        padding-left: 52px;
+        padding-right: 52px;
+    }
+    .room__description {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .page__banner {
+        height: 534px;
+    }
+}
+
+@media (max-width:1000px) {
+    .page__banner {
+        height: 402px;
+    }
+    .other-rooms__link {
+        width: 224px;
+        height: 134px;
+    }
+    .room {
+        column-gap: 46px;
+    }
+    .room__img {
+        width: 329px;
+        height: 326px;
+    }
+    .breadcrumbs {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    .page__description {
+        font-size: 16px;
+        line-height: 150%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .room__description {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .other-rooms {
+        column-gap: 8px;
+    }
+    .page__title {
+        font-size: 60px;
+        line-height: 120%;
+        /* identical to box height, or 72px */
+    }
+}
+
+@media(max-width:770px) {}
+
+@media (max-width:680px) {
+    .page__banner {
+        height: 168px;
+    }
+    .other-rooms {
+        flex-direction: column;
+    }
+    .other-rooms__link {
+        width: 100%;
+        height: 140px;
+    }
+    .room {
+        flex-direction: column;
+    }
+    .room__img {
+        width: 280px;
+        height: 180px;
+    }
+    .room__description {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .breadcrumbs {
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+    .breadcrumbs__link {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .page__title {
+        font-size: 30px;
+        line-height: 120%;
+        /* identical to box height, or 36px */
+    }
+}

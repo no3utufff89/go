@@ -1,5 +1,5 @@
 .features {
-    height: 808px;
+    height: 708px;
 }
 
 .features__list {
@@ -40,7 +40,6 @@
 .features_title {
     white-space: pre-line;
     text-align: center;
-    margin-bottom: 41px;
 }
 
 .features__item_vr {
@@ -65,4 +64,86 @@
 
 .features__item_ps {
     background-image: url(../../assets/img/sony.jpg);
+}
+
+@media (max-width:1200px) {
+    .section_features {
+        padding-top: 53px;
+        padding-bottom: 40px;
+    }
+    .features__item {
+        width: 287px;
+        height: 172px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+    }
+    .features {
+        height: 542px;
+    }
+    .features__item:nth-child(3n+2) {
+        transform: translateY(30px);
+    }
+    .features_title {
+        margin-bottom: 36px;
+    }
+}
+
+@media (max-width:1000px) {
+    .section_features {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    .features {
+        height: auto;
+    }
+    .features__item:nth-child(3n+2) {
+        transform: translate(0);
+    }
+    .features__item:nth-child(3n+2):hover {
+        scale: 1.1;
+    }
+    .features__item {
+        width: 324px;
+        height: 200px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+    }
+    .features__list {
+        gap: 20px;
+    }
+    .features_title {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:680px) {
+    .section_features {
+        padding-top: 26px;
+        padding-bottom: 10px;
+    }
+    .features_title {
+        margin-bottom: 15px;
+    }
+    .features__item {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 31px;
+        width: 135px;
+        height: 75px;
+    }
+    .features__item_cinema {
+        padding-bottom: 3px;
+    }
+    .features__item_audio {
+        padding-bottom: 17px;
+    }
+    .features__text {
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .features__list {
+        gap: 10px;
+    }
 }

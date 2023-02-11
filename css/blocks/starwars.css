@@ -1,0 +1,8 @@
+.section_wars {
+    padding-top: 5px;
+}
+
+.starwars_banner {
+    background-image: url(../../assets/img/banners/star-wars-banner.jpg);
+    background-position: top;
+}

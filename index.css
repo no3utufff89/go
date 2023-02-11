@@ -1,6 +1,11 @@
 @import './css/default.css';
+@import './css/common.css';
 @import './css/blocks/header.css';
 @import './css/blocks/banner.css';
+@import './css/blocks/vibes.css';
+@import './css/blocks/starwars.css';
+@import './css/blocks/wildwest.css';
+@import './css/blocks/neon.css';
 @import './css/blocks/features.css';
 @import './css/blocks/rooms.css';
 @import './css/blocks/reserve.css';

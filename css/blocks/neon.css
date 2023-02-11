@@ -1,0 +1,8 @@
+.section_neon {
+    padding-top: 5px;
+}
+
+.neon_banner {
+    background-image: url(../../assets/img/banners/neon-style-banner.jpg);
+    background-position: top;
+}

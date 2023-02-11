@@ -58,3 +58,60 @@
 .rooms-list__item_neon {
     background-image: url(../../assets/img/neon_style-zal.jpg);
 }
+
+@media (max-width:1200px) {
+    .section__title_zali {
+        margin-bottom: 36px;
+    }
+    .rooms-list__item {
+        background-size: cover;
+        height: 267px;
+        width: 48%;
+    }
+    .rooms-list__link {
+        font-size: 50px;
+        line-height: 60px;
+        max-width: min-content;
+    }
+    .section_zali {
+        padding-bottom: 70px;
+    }
+}
+
+@media (max-width:1000px) {
+    .rooms-list__item {
+        background-size: cover;
+        height: 200px;
+        width: 48%;
+    }
+    .rooms-list {
+        row-gap: 18px;
+        column-gap: 20px;
+    }
+    .rooms-list__link {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .section_zali {
+        padding-bottom: 62px;
+    }
+}
+
+@media (max-width:680px) {
+    .rooms-list__item {
+        background-size: cover;
+        height: 168px;
+        width: 100%;
+    }
+    .rooms-list {
+        row-gap: 10px;
+        column-gap: 0px;
+    }
+    .rooms-list__link {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    .section_zali {
+        padding-bottom: 30px;
+    }
+}
