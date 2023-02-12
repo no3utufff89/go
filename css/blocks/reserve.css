@@ -155,6 +155,13 @@ input {
 
 .rooms__label:hover {
     border: 3px solid #640AA3;
+    background-color: #EADEED;
+}
+
+.rooms__label:active {
+    background-color: #640AA3;
+    border: 3px solid white;
+    color: var(--main-color);
 }
 
 

@@ -111,6 +111,9 @@
         font-size: 14px;
         line-height: 20px;
     }
+    .reviews__item {
+        padding-left: 63px;
+    }
 }
 
 @media (max-width:680px) {
@@ -135,5 +138,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .reviews__text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .reviews__item {
+        padding-left: 0;
     }
 }

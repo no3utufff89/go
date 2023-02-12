@@ -378,13 +378,14 @@
             <div class="container">
                 <h2 class="section__title">Контакты</h2>
                 <div class="contacts__wrapper">
-                    <div class="contacts__block">
+                    <address class="contacts__block">
                         <ul class="footer-list">
 
-                            <li class="footer-list__item address">
-                                <svg class="footer__icon" width="35" height="32">
+                            <li class="footer-list__item address ">
+                                <svg class="footer__icon address__icon" width="35" height="32">
                                         <use href="#map-icon"></use>
                                     </svg>
+                                    
                                 <span class="address__text">г.Москва <br> ул.Аквамарина, 16</span>
                             </li>
 
@@ -437,19 +438,25 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </address>
                     <div class="contacts__block map">
-                        <img class="map__img" src="assets/img/map.jpg" alt="Карта с адресом">
+                        <picture>
+                            <source srcset="assets/img/map-1200.jpg" media="(max-width: 1200px)">
+                            <source srcset="assets/img/map-1000.jpg" media="(max-width: 1000px)">
+                            <source srcset="assets/img/map-680.jpg" media="(max-width: 680px)">
+                            <img class="map__img" src="assets/img/map.jpg" alt="Карта с адресом">
+                        </picture>
+
                     </div>
                 </div>
                 <div class="footer__copyright copyright">
                     <span class="copyright__text">
                             © Game Over, 2022
                         </span>
-                    <div class="copyright__author">
+                    <address class="copyright__author">
                         <a href="#" class="copyright__text copyright__text_name">Design by Anastasia Ilina</a>
                         <p class="copyright__text copyright__text_mail">ilina9825@gmail.com</p>
-                    </div>
+                    </address>
                 </div>
 
             </div>

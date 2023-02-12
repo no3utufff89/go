@@ -118,6 +118,14 @@ cite {
         padding-bottom: 13px;
         padding-right: 0;
     }
+    .quote::before {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .quote::after {
+        font-size: 30px;
+        line-height: 36px;
+    }
     cite {
         font-size: 18px;
         line-height: 26px;
@@ -188,6 +196,10 @@ cite {
         width: 280px;
         height: 280px;
     }
+    .about__description {
+        font-size: 12px;
+        line-height: 16px;
+    }
     .blockquote {
         grid-row: 3/4;
         grid-column: 1/2;
@@ -197,6 +209,25 @@ cite {
         line-height: 26px;
         margin-bottom: 9px;
         padding-bottom: 0;
+        padding-left: 15px;
+    }
+    .quote::before {
+        position: absolute;
+        top: -4px;
+        left: 0;
+        content: "\201c";
+        color: #6C0287;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .quote::after {
+        content: "\201d";
+        padding-left: 6px;
+        color: #6C0287;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 26px;
     }
     cite {
         font-size: 12px;

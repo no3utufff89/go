@@ -26,6 +26,10 @@ body {
     background-color: var(--main-dark);
 }
 
+address {
+    font-style: normal;
+}
+
 img {
     max-width: 100%;
     height: auto;
