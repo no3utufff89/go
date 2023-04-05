@@ -24,6 +24,7 @@ body {
     font-family: Arial, sans-serif;
     color: var(--main-color);
     background-color: var(--main-dark);
+    position: relative;
 }
 
 address {
