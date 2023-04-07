@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="assets/img/icon.svg">
     <link rel="stylesheet" href="index.css">
+    <script src="./script/main.js" type="module"></script>
+
     <title>Проект GO</title>
 </head>
 
@@ -41,6 +43,8 @@
                             <a class="nav__link" href="#contacts">Контакты</a>
                         </li>
                     </ul>
+                    <button class="btn  callback-btn_mobile">Заказать звонок</button>
+
                 </nav>
                 <button class="btn callback-btn">Заказать звонок</button>
             </div>
@@ -210,6 +214,38 @@
 
         </section>
     </footer>
+    <div class="overlay">
+        <div class="callBack-modal">
+            <h3 class="callBack-modal__title">
+                Заказать звонок
+            </h3>
+
+            <form id="callBack" class="callBack-form">
+                <div class="callBack-form__container">
+                    <div class="group">
+                        <label for="callback-name" class="time__label time__label_name" >Имя</label>
+                        <input id="callback-name" class="time__input time__input_name"
+                               type="text" required name="name" placeholder="Ваше имя">
+                    </div>
+                    <div class="group">
+                        <label for="callback-phone" class="time__label time__label_lastname">Телефон</label>
+                        <input id="callback-phone" class="time__input time__input_lastname"
+                               type="number" required="" name="phone">
+                    </div>
+                </div>
+            </form>
+            <div class="callBack-modal__controls">
+                <button class="callBack-modal__btn" type="submit" form="callBack">Позвоните мне</button>
+            </div>
+            <button class="callBack-modal__close-btn">
+                закрыть модалку
+            </button>
+
+        </div>
+    </div>
+    <div class="btnUp">&uarr;</div>
+
+
     <svg class="hidden">
         <symbol id="map-icon" viewBox="0 0 35 32">
             <path d="M17.4815 0C11.338 0 6.21411 4.52938 6.21411 10.3125C6.21411 12.5126 6.93645 14.4745 8.32275 16.3129L16.6192 28.1616C17.0217 28.7376 17.9421 28.7365 18.3437 28.1616L26.6762 16.2726C28.0326 14.5175 28.7488 12.4567 28.7488 10.3125C28.7488 4.62619 23.6943 0 17.4815 0ZM17.4815 15C14.6576 15 12.3599 12.8971 12.3599 10.3125C12.3599 7.72794 14.6576 5.625 17.4815 5.625C20.3053 5.625 22.603 7.72794 22.603 10.3125C22.603 12.8971 20.3053 15 17.4815 15Z" fill="currentColor"/>

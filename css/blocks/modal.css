@@ -1,15 +1,19 @@
 .overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     height: auto;
     background-color: rgba(27, 26, 27, 0.7);
+    display: none;
+    z-index: 5;
+}
+.overlay.active {
     display: block;
 }
 .callBack-modal {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     row-gap: 40px;
@@ -20,7 +24,12 @@
     top: 145px;
     margin: 0 auto;
     position: relative;
+    z-index: 2;
 }
+.callBack-modal.active {
+    display: flex;
+}
+
 .callBack-modal__title {
     font-weight: 700;
     font-size: 22px;
@@ -73,8 +82,26 @@
     -moz-box-shadow: 0px 0px 27px 22px rgba(255, 255, 255, 0.2);
     box-shadow: 0px 0px 24px 18px rgba(255, 255, 255, 0.2);
 }
+.callBack-modal__close-btn {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-image: url("../../assets/img/cross.svg");
+    width: 42px;
+    height: 42px;
+    font-size: 0;
+    background-size: contain;
+}
 @media (max-width:1000px) {
-
+    .callBack-modal {
+        top: 38px;
+    }
+    .overlay {
+        position: absolute;
+        top: 107px;
+    }
 }
 
 @media (max-width:680px) {
@@ -86,5 +113,12 @@
    }
     .callBack-modal__btn {
         width: 242px;
+    }
+    .callBack-modal__close-btn {
+        width: 30px;
+        height: 30px;
+    }
+    .overlay {
+        top: 71px;
     }
 }

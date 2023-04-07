@@ -1,5 +1,6 @@
 .header {
     padding-top: 30px;
+    position: relative;
 }
 
 .header__row {
@@ -40,7 +41,9 @@
     border: none;
 }
 
-
+.callback-btn_mobile {
+    display: none;
+}
 /*====================================Навигация======================*/
 
 .nav__list {
@@ -85,6 +88,10 @@
     transition: transform .24s ease-in-out, top .24s ease-in-out;
     border-radius: 2px;
 }
+.menu-btn_active>.menu-btn__line {
+    opacity: 0;
+}
+
 
 .menu-btn::before {
     width: 100%;
@@ -95,7 +102,13 @@
     width: 50%;
     top: calc(100% - 5px);
 }
-
+.menu-btn_active:before {
+    transform: translateY(12px) rotate(45deg);
+}
+.menu-btn_active:after {
+    width: 100%;
+    transform: translateY(-12px) rotate(-45deg);
+}
 .menu-btn__line {
     position: absolute;
     left: 0;
@@ -146,6 +159,31 @@
     .nav {
         display: none;
     }
+    .nav.active {
+        display: block;
+        position: absolute;
+        left: 0;
+        background-color: #1B1A1B;
+        width: 100%;
+        z-index: 6;
+        top: 107px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .nav__list.active {
+       flex-direction: column;
+    }
+
+    .nav__link {
+        display: block;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        text-align: center;
+
+    }
+    .nav__item:hover {
+        background-color: var(--main-menu-bg);
+    }
     .logo {
         width: 87px;
         height: 55px;
@@ -169,5 +207,31 @@
     }
     .callback-btn {
         display: none;
+    }
+    .menu-btn_active:before {
+        transform: translateY(4px) rotate(45deg);
+    }
+    .menu-btn_active:after {
+        width: 100%;
+        transform: translateY(-11px) rotate(-45deg);
+    }
+    .nav.active {
+        top: 71px;
+    }
+    .callback-btn_mobile {
+        padding: 11px 23px;
+        background-color: transparent;
+        color: #fff;
+        border: 3px solid #CD06FF;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 14px;
+        transition: background-color, border .2s;
+        display: block;
+        margin: 0 auto;
+        width: 229px;
+        height: 45px;
     }
 }

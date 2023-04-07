@@ -135,7 +135,25 @@
 .other-rooms__link_vibes {
     background-image: url(../assets/img/80_vibes-zal.jpg);
 }
-
+.btnUp {
+    color: #ffffff;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    display: none;
+    font-size: 25px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #ad8b7fad, transparent 79px);
+}
+.btnUp-open {
+    display: block;
+    z-index: 20;
+}
 @media (max-width:1200px) {
     .other-rooms__link {
         width: 288px;
