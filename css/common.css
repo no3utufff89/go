@@ -154,6 +154,33 @@
     display: block;
     z-index: 20;
 }
+.slider-button-prev {
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 45px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url('../assets/img/slider-arrow.svg') center / contain no-repeat;
+    z-index: 2;
+    border: none;
+    cursor: pointer;
+}
+.slider-button-next {
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 45px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    background: url('../assets/img/slider-arrow.svg') center / contain no-repeat;
+    z-index: 2;
+    border: none;
+    cursor: pointer;
+
+}
 @media (max-width:1200px) {
     .other-rooms__link {
         width: 288px;
@@ -260,5 +287,9 @@
         font-size: 30px;
         line-height: 120%;
         /* identical to box height, or 36px */
+    }
+    .slider-button-prev,.slider-button-next {
+        width: 36px;
+        height: 36px;
     }
 }

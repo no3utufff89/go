@@ -1,11 +1,12 @@
 .reviews {
     padding-left: 100px;
     padding-right: 100px;
+    position: relative;
 }
 
 .reviews__list {
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     row-gap: 50px;
 }
 
@@ -113,6 +114,9 @@
     }
     .reviews__item {
         padding-left: 63px;
+    }
+    .reviews__list {
+        box-sizing: border-box;
     }
 }
 

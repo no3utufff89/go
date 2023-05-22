@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="assets/img/icon.svg">
     <link rel="stylesheet" href="index.css">
+    <script src="script/swiper-bundle.min.js"></script>
     <script src="./script/main.js" type="module"></script>
     <title>Проект GO</title>
 </head>
@@ -302,46 +303,52 @@
         <section class="section" id="reviews">
             <div class="container">
                 <h2 class="section__title section__title_reviews">Отзывы посетителей</h2>
-                <div class="reviews">
-                    <ul class="reviews__list">
-                        <li class="reviews__item">
-                            <figure class="avatar">
-                                <div class="avatar__gradient">
-                                    <img class="avatar__img" src="assets/img/user-avatar_01.jpg" alt="Фото посетителя">
-                                </div>
+                <div class="reviews ">
+                    <div class="slider-button-prev"></div>
+                    <div class="slider-button-next"></div>
+                    <div class="swiper">
+                        <ul class="reviews__list swiper-wrapper">
+                            <li class="reviews__item swiper-slide">
+                                <figure class="avatar">
+                                    <div class="avatar__gradient">
+                                        <img class="avatar__img" src="assets/img/user-avatar_01.jpg" alt="Фото посетителя">
+                                    </div>
 
-                                <figcaption class="avatar__description">Макс самойлов</figcaption>
-                            </figure>
-                            <p class="reviews__text">
-                                Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружениию Сервис на высоте!
-                            </p>
-                        </li>
-                        <li class="reviews__item">
-                            <figure class="avatar">
-                                <div class="avatar__gradient">
-                                    <img class="avatar__img" src="assets/img/user-avatar_02.jpg" alt="Фото посетителя">
+                                    <figcaption class="avatar__description">Макс самойлов</figcaption>
+                                </figure>
+                                <p class="reviews__text">
+                                    Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружениию Сервис на высоте!
+                                </p>
+                            </li>
+                            <li class="reviews__item swiper-slide">
+                                <figure class="avatar">
+                                    <div class="avatar__gradient">
+                                        <img class="avatar__img" src="assets/img/user-avatar_02.jpg" alt="Фото посетителя">
 
-                                </div>
-                                <figcaption class="avatar__description">Оксана Григорьева</figcaption>
-                            </figure>
-                            <p class="reviews__text">
-                                Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений
-                            </p>
-                        </li>
-                        <li class="reviews__item">
-                            <figure class="avatar">
-                                <div class="avatar__gradient">
-                                    <img class="avatar__img" src="assets/img/user-avatar_03.jpg" alt="Фото посетителя">
+                                    </div>
+                                    <figcaption class="avatar__description">Оксана Григорьева</figcaption>
+                                </figure>
+                                <p class="reviews__text">
+                                    Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений
+                                </p>
+                            </li>
+                            <li class="reviews__item swiper-slide">
+                                <figure class="avatar">
+                                    <div class="avatar__gradient">
+                                        <img class="avatar__img" src="assets/img/user-avatar_03.jpg" alt="Фото посетителя">
 
-                                </div>
-                                <figcaption class="avatar__description">Никита Ященко</figcaption>
-                            </figure>
-                            <p class="reviews__text">
-                                Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружениию Сервис на высоте!
-                            </p>
-                        </li>
+                                    </div>
+                                    <figcaption class="avatar__description">Никита Ященко</figcaption>
+                                </figure>
+                                <p class="reviews__text">
+                                    Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружениию Сервис на высоте!
+                                </p>
+                            </li>
 
-                    </ul>
+                        </ul>
+
+                    </div>
+
                 </div>
             </div>
 
