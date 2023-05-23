@@ -1,7 +1,7 @@
 import { pageElements } from "./pageElements.js";
 import {animate, styleBuilder} from "./animateMenu.js";
 const controls = () => {
-    const {callBackBtn, overlay, callbackModal, menuBtn, nav, navList, header, navItems, btnUp, modalCloseBtn,callBackBtnMobile} = pageElements();
+    const {callBackBtn, overlay, callbackModal, menuBtn, nav, navList, header, navItems, btnUp, modalCloseBtn,callBackBtnMobile, callBackForm} = pageElements();
 
     const closeMenu = () => {
         menuBtn.classList.remove('menu-btn_active');
@@ -9,6 +9,7 @@ const controls = () => {
         nav.classList.remove('active');
         nav.classList.remove('nav-mobile');
         navList.classList.remove('active');
+        callBackForm.reset();
     }
     document.addEventListener('click', e => {
         let target = e.target;
@@ -24,6 +25,7 @@ const controls = () => {
                nav.classList.remove('active');
                nav.classList.remove('nav-mobile');
                navList.classList.remove('active');
+
            }
         }
         if (target === overlay) {
@@ -46,6 +48,7 @@ const controls = () => {
         if (target === modalCloseBtn) {
             overlay.classList.remove('active');
             callbackModal.classList.remove('active');
+            callBackForm.reset();
 
         }
 

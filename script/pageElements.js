@@ -13,6 +13,7 @@ export const pageElements = () => {
     const buttons = document.querySelectorAll('.item__header');
     const faqWrapper = document.querySelectorAll('.item-wrapper');
     const modalCloseBtn = document.querySelector('.callBack-modal__close-btn');
+    const callBackForm = document.querySelector('.callBack-form')
     return {
         callBackBtn,
         overlay,
@@ -27,6 +28,7 @@ export const pageElements = () => {
         items,
         faqWrapper,
         modalCloseBtn,
-        callBackBtnMobile
+        callBackBtnMobile,
+        callBackForm
     }
 }

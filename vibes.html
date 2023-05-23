@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="assets/img/icon.svg">
     <link rel="stylesheet" href="index.css">
+    <script defer src="script/just-validate.production.min.js"></script>
+    <script defer src="script/inputmask.min.js"></script>
+    <script defer src="script/callBackValidate.js" type="module"></script>
+
     <script src="./script/main.js" type="module"></script>
 
     <title>Проект GO</title>
@@ -224,13 +228,13 @@
                 <div class="callBack-form__container">
                     <div class="group">
                         <label for="callback-name" class="time__label time__label_name" >Имя</label>
-                        <input id="callback-name" class="time__input time__input_name"
+                        <input id="callback-name" class="time__input time__input_name validate-name-js"
                                type="text" required name="name" placeholder="Ваше имя">
                     </div>
                     <div class="group">
                         <label for="callback-phone" class="time__label time__label_lastname">Телефон</label>
-                        <input id="callback-phone" class="time__input time__input_lastname"
-                               type="number" required="" name="phone">
+                        <input id="callback-phone" class="time__input time__input_lastname js-telMask"
+                               type="tel" required="" name="phone">
                     </div>
                 </div>
             </form>
